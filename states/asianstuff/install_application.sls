@@ -4,8 +4,6 @@ Get latest source repository:
     - rev: master
     - target: /var/www/website
     - user: root
-    - group: www-data
-
 
 Nginx restarted on changes:
     cmd.run:
