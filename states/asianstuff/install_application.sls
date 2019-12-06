@@ -8,9 +8,5 @@ Get latest source repository:
 
 
 Nginx restarted on changes:
-  service.running:
-    - name: nginx
-    - reload: True
-    - restart: True
-    - watch:
-        - file: /var/www/website/index.html
+    cmd.run:
+        - name: systemctl restart nginx
